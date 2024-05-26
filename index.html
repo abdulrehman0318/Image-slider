@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <main>
+      <ul class='slider'>
+        <li class='item' style="background-image: url('https://akm-img-a-in.tosshub.com/sites/dailyo//resources/202209/1200-36190922052548.jpeg')">
+          <div class='content'>
+            <h2 class='title'>"Indian Team"</h2>
+            <ul class="list-players">
+              <li>Rohit Sharma</li>
+              <li>Shubman Gill</li>
+              <li>Yashasvi Jaiswal</li>
+              <li>Virat Kohli</li>
+              <li>Shreyas Iyer</li>
+              <li>Ruturaj Gaikwad</li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li class='item' style="background-image: url('https://i0.wp.com/cricketaddictor.com/wp-content/uploads/2021/09/Eranakulam-Cricket-Club-1.png?fit=1200%2C630&ssl=1')">
+          <div class='content'>
+            <h2 class='title'>"Pakistani Team"</h2>
+            <ul class="list-players">
+              <li>Mohammad Rizwan</li>
+              <li>Sarfaraz Ahmed</li>
+              <li>Naseem Shah</li>
+              <li>Haris Rauf</li>
+              <li>Hasan Ali</li>
+              <li>Shaheen Shah Afridi</li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li class='item' style="background-image: url('https://cricketaddictor.com/wp-content/uploads/2021/07/Australia-Cricket-Team-4.jpg')">
+          <div class='content'>
+            <h2 class='title'>"Australian Team"</h2>
+            <ul class="list-players">
+              <li>Abbott</li>
+              <li>Boland</li>
+              <li>Behrendorff</li>
+              <li>Agar</li>
+              <li>Carey</li>
+              <li>Cummins</li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li class='item' style="background-image: url('https://resources.pulse.icc-cricket.com/ICC/photo/2022/07/17/34695967-93d7-4165-8819-d019dc8688b5/GettyImages-1008659232.jpg')">
+          <div class='content'>
+            <h2 class='title'>"Bangladeshi Team"</h2>
+            <ul class="list-players">
+              <li>Shakib Al Hassan</li>
+              <li>Tamim Iqbal</li>
+              <li>Hasan Mahmud</li>
+              <li>Afif Hossain</li>
+              <li>Mahedi Hasan</li>
+              <li>Anamul Haque</li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li class='item' style="background-image: url('https://wallpapers.com/images/hd/new-zealand-cricket-team-walking-fw1qdowux56tqypm.jpg')">
+          <div class='content'>
+            <h2 class='title'>"New Zeland Team"</h2>
+            <ul class="list-players">
+              <li>Trent Boult</li>
+              <li>Kane Williamson</li>
+              <li>Tim Southee</li>
+              <li>Ish Sodhi</li>
+              <li>Devon Conway</li>
+              <li>Daryl Mitchell</li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </li>
+        <li class='item' style="background-image: url('https://wallpapers.com/images/featured/south-africa-cricket-q36g9recev39leey.jpg')">
+          <div class='content'>
+            <h2 class='title'>"South Africa"</h2>
+            <ul class="list-players">
+              <li>Quinton de Kock</li>
+              <li>Temba Bavum</li>
+              <li>Kagiso Rabada</li>
+              <li>Keshav Maharaj</li>
+              <li>Lungi Ngidi</li>
+              <li>Anrich Nortje</li>
+            </ul>
+            <button>Read More</button>
+          </div>
+        </li>
+      </ul>
+      <nav class='nav'>
+        <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+        <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+      </nav>
+    </main>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/script.js"></script>
+    <script>
+      const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+    </script>
+  </body>
+</html>
